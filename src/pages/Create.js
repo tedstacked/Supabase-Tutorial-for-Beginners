@@ -8,7 +8,7 @@ const Create = () => {
   const [title, setTitle] = useState('')
   const [method, setMethod] = useState('')
   const [rating, setRating] = useState('')
-  const [formError, setFormError] = useState('null')
+  const [formError, setFormError] = useState(null)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -35,7 +35,6 @@ const Create = () => {
 
   return (
     <div className="page create">
-      <h2>Create</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">Title:</label>
         <input 
