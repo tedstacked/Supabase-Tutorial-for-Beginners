@@ -9,7 +9,7 @@ const Home = () => {
   const [smoothies, setSmoothies] = useState(null)
 
   useEffect(() => {
-    const fetchSmoothies = async () => {
+    const fetchSmoothie = async () => {
       const { data, error } = await supabase
         .from('smoothies')
         .select()
@@ -25,7 +25,7 @@ const Home = () => {
         }
     }
 
-    fetchSmoothies()
+    fetchSmoothie()
   }, [])
 
   return (
